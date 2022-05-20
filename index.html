@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fonts/icomoon1/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="header-container">
+                <div class="header-logo">Flowerpot</div>
+            </div>       
+        </div>
+        <main class="main">
+            
+            <form action="#" class="form">
+                <div class="shipping">Доставка</div>
+                <div class="inputs-container">
+                    <div class="inputs-name">
+                        <div class="input-container">
+                            <span class="input-name">Ваше имя *</span>
+                            <input type="text" class="input required input-firstname">
+                        </div>
+                        <div class="input-container">
+                            <span class="input-name">Ваша фамилия *</span>
+                            <input type="text" class="input required input-lastname">
+                        </div>
+                        <div class="input-container">
+                            <span class="input-name">Ваше  отчество</span>
+                            <input type="text" class="input input-surname">
+                        </div>
+                        <div class="input-container">
+                            <span class="input-name">Ваш номер телефона *</span>
+                            <input type="tel" class="input required input-phonenumber number">
+                        </div>
+                        <div class="input-container">
+                            <span class="input-name">Ваш email *</span>
+                            <input type="email" class="input required input-email">
+                        </div>
+                    </div>
+                    
+                    <div class="select-container select-city-container">
+                        <div class="input-name">ваш город</div>
+                        <div class="select-city">
+                            <div class="select-header">
+                                <span class="select-current">Выбрать город</span>
+                                <div class="select-icon-container">
+                                    <div class="select-icon"></div>
+                                </div>
+                            </div>
+                            <div class="select-body first-select">
+                                <div class="select-item-disabled">Выбрать город</div>
+                                <div class="select-item">Киев</div>
+                                <div class="select-item">Харьков</div>
+                                <div class="select-item">Львов</div>
+                                <div class="select-item">Одеса</div>
+                                <div class="select-item">Днепр</div>
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="checkboxes-methoddelivery checkboxes-methoddelivery1">
+                        <span class="input-name checkboxes-title">Выбрать способ доставки:</span>
+                        <div class="checkboxes-methoddelivery-container">
+                            <span class="input-name checkbox-name">Доставка в отделение "Нова пошта"</span>
+                            <input type="radio" name="methoddelivery" class="mailDelivery methoddelivery" data-subcontent = "maildelivery-subcontent">
+                        </div>
+                        <div class="checkboxes-methoddelivery-container">
+                            <span class="input-name checkbox-name">Доставка до Вашего дома</span>
+                            <input type="radio" name="methoddelivery" class="homeDelivery methoddelivery" data-subcontent = "homedelivery-subcontent">
+                        </div>    
+                    </div>
+                    <div class="select-container select-post-office maildelivery-subcontent subcontent" >
+                        <div class="input-name">Почтовое отделение</div>
+                        <div class="select-postoffices select-city">
+                            <div class="select-header">
+                                <span class="select-current">Выбрать отдел почты</span>
+                                <div class="select-icon-container">
+                                    <div class="select-icon"></div>
+                                </div>
+                            </div>
+                            <div class="select-body">
+                                <div class="select-item-disabled">Выбрать отдел почты</div>
+                                <div class="select-item">Адресс 1</div>
+                                <div class="select-item">Адресс 2</div>
+                                <div class="select-item">Адресс 3</div>
+                                <div class="select-item">Адресс 4</div>
+                                <div class="select-item">Адресс 5</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inputs-adress homedelivery-subcontent subcontent">
+                        <span class="input-name">Улица *</span>
+                        <input type="text" class="input required input-street">
+                        <span class="input-name">Дом *</span>
+                        <input type="text" class="input required input-house number">
+                        <span class="input-name">Подьезд</span>
+                        <input type="text" class="input input-entrance number">
+                        <span class="input-name">Этаж</span>
+                        <input type="text" class="input input-floor number">
+                        <span class="input-name">Квартира</span>
+                        <input type="text" class="input input-flat number">
+                        
+                    </div>
+                    
+                    <span class="input-name">Коментарий</span>
+                        <textarea name="" class="commentar"></textarea>
+
+                    <div class="checkboxes-methoddelivery checkboxes-methodpay1 maildelivery-subcontent subcontent">
+                        <span class="input-name checkboxes-title">Выбрать способ оплаты:</span>
+                        <div class="checkboxes-methoddelivery-container">
+                            <span class="input-name checkbox-name">Оплатить в почтовом отделении</span>
+                            <input type="radio" name="methodpay" class="mailDelivery methodPayPost">
+                        </div>
+                        <div class="checkboxes-methoddelivery-container">
+                            <span class="input-name checkbox-name">Оплатить онлайн</span>
+                            <input type="radio" name="methodpay" class="homeDelivery methodPayPost">
+                        </div>    
+                    </div>
+
+                    <div class="checkboxes-methoddelivery checkboxes-methodpay2 homedelivery-subcontent subcontent" >
+                        <span class="input-name checkboxes-title">Выбрать способ оплаты:</span>
+                        <div class="checkboxes-methoddelivery-container">
+                            <span class="input-name checkbox-name">Наличными курьеру</span>
+                            <input type="radio" name="methodpay2" class="mailDelivery methodPayHome">
+                        </div>
+                        <div class="checkboxes-methoddelivery-container">
+                            <span class="input-name checkbox-name">Онлайн</span>
+                            <input type="radio" name="methodpay2" class="homeDeliverys methodPayHome">
+                        </div>    
+                    </div>
+
+
+                </div>
+                <div class="purchase">Оформить заказ</div>
+            </form>
+  
+        </main>
+       
+    </div>
+    <script src="js/app.min.js"></script>
+</body>
+</html>
