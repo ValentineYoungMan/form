@@ -1,7 +1,3 @@
-import * as flsFunctions from "./modules/functions.js";
-import {DA} from "./dynamic-adaptive.js";
-
-flsFunctions.isWebp();
 
 //----------------------------------------------
 
